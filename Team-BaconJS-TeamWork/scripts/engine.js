@@ -44,7 +44,7 @@ function askQuestion() {
 
   // setup for the first time
   if (currentQuestion === 0) {
-    moneyContainer.textContent = "Money: 0 ";
+    moneyContainer.textContent = "Money: 0 $";
     submitBtn.textContent = "Submit Answer";
   }
 }
@@ -78,7 +78,7 @@ function checkAnswer() {
     } else {
       labelStyle.color = "red";
     }
-    moneyContainer.textContent = "Money: " + money;
+    moneyContainer.textContent = "Money: " + money +" $";
     pickedAnswer = userpick;
   }else { 
     answerStatus = true;
