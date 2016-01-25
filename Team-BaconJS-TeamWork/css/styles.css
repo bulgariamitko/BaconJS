@@ -1,0 +1,14 @@
+html,
+button,
+input {
+  color: #222;
+}
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+#container {
+  margin: auto;
+  max-width: 640px;
+  padding: 0 15px;
+}
