@@ -80,11 +80,11 @@ function checkAnswer() {
     }
     moneyContainer.textContent = "Money: " + money;
     pickedAnswer = userpick;
-  }else { // move to next question
+  }else { 
     answerStatus = true;
     // change button text back to "Submit Answer"
     submitBtn.textContent = "Submit Answer";
-    if (pickedAnswer == quiz[currentQuestion].correct) {
+    if (pickedAnswer == quiz[currentQuestion].correct) { // move to next question
       if (currentQuestion < quiz.length - 1) {
         currentQuestion++;
         askQuestion();
@@ -100,12 +100,12 @@ function checkAnswer() {
 
 function wrongAnswerResult() {
   content.innerHTML = "<h2>You answered wrong</h2>" +
-    "<h2>You won: " +money +" money </h2>" ;
+    "<h2>You won: " +money +" $ </h2>" ;
 }
 
 function allAnswersCorrect(){
   content.innerHTML = "<h2>Congratulations you've beat the Game!</h2>" +
-    "<h2>You won: " +money +" money </h2>" ;
+    "<h2>You won: " +money +" $ </h2>" ;
 }
 
 window.addEventListener("load", askQuestion, false);
