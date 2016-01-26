@@ -11,7 +11,7 @@ var quiz = [{
 }, {
   "question": "Which is fastest?",
   "choices": ["DDRam", "SSD Hard Drive", "Cloud (GDrive, Dropbox, Box.net and ect)", "HHD"],
-  "correct": "DDR",
+  "correct": "DDRam",
   "money" : "3000"
 }, {
   "question": "What is the name of the first person who discover photography?",
@@ -22,5 +22,15 @@ var quiz = [{
   "question": "What was the capital of Bulgaria from 972 till 992 year?",
   "choices": ["Veliko Tarnovo", "Pliska", "Sofia", "Skopje"],
   "correct": "Skopje",
+  "money" : "7000"
+},  {
+  "question": "How old is oldest golden treasure in the world?",
+  "choices": ["1000 years", "6000 years", "500 years", "5000 years"],
+  "correct": "6000 years",
   "money" : "10000"
+},  {
+  "question": "What programming language written in Apple?",
+  "choices": ["SWIFT", "Objectice C", "C#", "JAVA"],
+  "correct": "SWIFT",
+  "money" : "15000"
 }];
