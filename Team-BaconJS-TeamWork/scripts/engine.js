@@ -22,16 +22,15 @@ function askQuestion() {
   for (var i = 0; i < choices.length; i++) {
 
     if (i >= 1 & i<2) {
-      choicesHtml += "<input type='radio' name='quiz" + currentQuestion +
+      choicesHtml += "<div class='row'> <input type='radio' name='quiz" + currentQuestion +
       "' id='choice" + (i + 1) +
       "' value='" + choices[i] + "'>" +
-      " <label for='choice" + (i + 1) + "'>" + choices[i] + "</label><br>";
+      " <label for='choice" + (i + 1) + "'>" + choices[i] + "</label></div>";
     } else {
-      choicesHtml += "<input type='radio' name='quiz" + currentQuestion +
+      choicesHtml += "<div class='row'> <input type='radio' name='quiz" + currentQuestion +
       "' id='choice" + (i + 1) +
       "' value='" + choices[i] + "'>" +
-      " <label for='choice" + (i + 1) + "'>" + choices[i] + "</label>"+
-      "   ";
+      " <label for='choice" + (i + 1) + "'>" + choices[i] + "</label></div>";
     }
   }
 
@@ -78,6 +77,7 @@ function checkAnswer() {
       submitBtn.textContent = "Correct Answer! Click here to see the next question...";
     } else {
       labelStyle.color = "red";
+      submitBtn.textContent = "Wrong Answer!";
     }
     moneyContainer.textContent = "Money: " + money +" $";
     pickedAnswer = userpick;
@@ -102,6 +102,7 @@ function checkAnswer() {
 function wrongAnswerResult() {
   content.innerHTML = "<h2>You answered wrong</h2>" +
     "<h2>You won: " +money +" $ </h2>" ;
+  content.style.textAlign = "center";
 }
 
 function allAnswersCorrect(){

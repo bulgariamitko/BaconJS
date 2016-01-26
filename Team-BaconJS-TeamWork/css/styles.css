@@ -6,9 +6,59 @@ input {
 body {
   font-size: 1em;
   line-height: 1.4;
+  background: rgba(242,246,248,1);
+  background: -moz-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(237,243,247,1) 22%, rgba(242,234,242,1) 51%, rgba(224,239,249,1) 99%, rgba(224,239,249,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,246,248,1)), color-stop(22%, rgba(237,243,247,1)), color-stop(51%, rgba(242,234,242,1)), color-stop(99%, rgba(224,239,249,1)), color-stop(100%, rgba(224,239,249,1)));
+  background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(237,243,247,1) 22%, rgba(242,234,242,1) 51%, rgba(224,239,249,1) 99%, rgba(224,239,249,1) 100%);
+  background: -o-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(237,243,247,1) 22%, rgba(242,234,242,1) 51%, rgba(224,239,249,1) 99%, rgba(224,239,249,1) 100%);
+  background: -ms-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(237,243,247,1) 22%, rgba(242,234,242,1) 51%, rgba(224,239,249,1) 99%, rgba(224,239,249,1) 100%);
+  background: linear-gradient(to right, rgba(242,246,248,1) 0%, rgba(237,243,247,1) 22%, rgba(242,234,242,1) 51%, rgba(224,239,249,1) 99%, rgba(224,239,249,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=1 );
 }
 #container {
   margin: auto;
   max-width: 640px;
   padding: 0 15px;
+}
+#container > h1{
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-family: 'Lobster', cursive;
+  font-style:  italic;
+}
+#content > p{
+  text-align: center;
+}
+
+.row{
+  margin-top: 10px;
+  background-color: #cce5ff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 0px;
+  vertical-align: middle;
+  height: 60px;
+  line-height: 60px; /* <-- this is what you must define */
+  vertical-align: middle
+}
+.row:hover{
+  cursor: pointer;
+  box-shadow: 0 0 6px 3px;
+}
+.row > input {
+  margin-left: 10px;
+}
+
+#choices > div.row > label{
+  height: 50px;
+  font-weight: bold;
+  display: inline-block;
+  width: 597px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+#money{
+  font-weight: bold;
 }
