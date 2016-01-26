@@ -75,6 +75,7 @@ function checkAnswer() {
     if (userpick == quiz[currentQuestion].correct) {
       money += parseInt(quiz[currentQuestion].money);
       labelStyle.color = "green";
+      submitBtn.textContent = "Correct Answer! Click here to see the next question...";
     } else {
       labelStyle.color = "red";
     }
