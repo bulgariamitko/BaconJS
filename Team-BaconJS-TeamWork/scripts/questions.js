@@ -1,5 +1,5 @@
 var quiz = [{
-  "question": "Which Bulgarian TV Show has more then 750 episodes?",
+  "question": "Which Bulgarian TV Show has more thаn 750 episodes?",
   "choices": ["Kato dve kapki voda", "Palna Ludnica", "Minuta e mnogo", "Ulicata"],
   "correct": "Minuta e mnogo",
   "money" : "1000"
@@ -14,7 +14,7 @@ var quiz = [{
   "correct": "DDRam",
   "money" : "3000"
 }, {
-  "question": "What is the name of the first person who discover photography?",
+  "question": "What is the name of the  person who discovered photography?",
   "choices": ["Caroline Rudolphi", "Ludwig Heinrich von Jakob", "Johann Heinrich Schulze", "Carl von Clausewitz"],
   "correct": "Johann Heinrich Schulze",
   "money" : "4000"
@@ -24,13 +24,13 @@ var quiz = [{
   "correct": "Skopje",
   "money" : "7000"
 },  {
-  "question": "How old is oldest golden treasure in the world?",
+  "question": "How old is the oldest golden treasure in the world?",
   "choices": ["1000 years", "6000 years", "500 years", "5000 years"],
   "correct": "6000 years",
   "money" : "10000"
 },  {
-  "question": "What programming language written in Apple?",
-  "choices": ["SWIFT", "Objectice C", "C#", "JAVA"],
+  "question": "Which is Apple's newest programming language?",
+  "choices": ["SWIFT", "Objectice C", "C#", "Haskell", "None of them"],
   "correct": "SWIFT",
   "money" : "15000"
 }];
